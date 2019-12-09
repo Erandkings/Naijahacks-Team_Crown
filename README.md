@@ -16,13 +16,14 @@ Unavailability of materials, files and text tutorials for individuals(Especially
 An application in form of a file hub, wich can enable registered users to upload files and materials into a database, these uploaded files can be seen by everyone who uses the app regardless of where they are and can be downloaded too.
 
 # Proposed Stack
-. Java
-. XML
-. Firebase Database/ Cloud Storage
+
+1. Java
+2. XML
+3. Firebase Database/ Cloud Storage
 
 # Benefits
-. Availability of materials and Text files
-. Availability of sample project topics and Past Questions for Students
-. Any File can be sent regardless of the field of study. 
-. Files must not be school related too, Novels and leisure materials could be shared.
+1. Availability of materials and Text files
+2. Availability of sample project topics and Past Questions for Students
+3. Any File can be sent regardless of the field of study. 
+4. Files must not be school related too, Novels and leisure materials could be shared.
 
