@@ -3,5 +3,11 @@
     <color name="colorPrimary">#181D4B</color>
     <color name="colorPrimaryDark">#1d203d</color>
     <color name="colorAccent">#202447</color>
-<!--    <color name="btnColor">#202447</color>-->
+    <color name="splashColor">#4176E1</color>
+    <color name="splash">#181D4B</color>
+    <color name="button_color">#04225D</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#4cad26</color>
+    <!--    <color name="btnColor">#202447</color>-->
 </resources>

@@ -32,6 +32,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:19.0.0'
     implementation 'com.google.firebase:firebase-auth:19.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
