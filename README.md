@@ -9,6 +9,8 @@ Ananike Kingsley Chijioke erandkings12@gmail.com
 
 Nwaelugo Noel Orisaemeka  Noelnwaelugo@gmail.com
 
+Aremu Folajomi Abdulsamad folajomiaremu@gmail.com
+
 # Problem
 Unavailability of materials, files and text tutorials for individuals(Especially Students) around the globe.
 
@@ -28,7 +30,7 @@ An application in form of a file hub, wich can enable registered users to upload
 4. Files must not be school related too, Novels and leisure materials could be shared.
 
 # Preview Prototype
-![Android Mobile – 1](https://user-images.githubusercontent.com/40652867/70465614-99d36600-1ac1-11ea-9186-4cad424c58c5.png)
-![Android Mobile – 3](https://user-images.githubusercontent.com/40652867/70465696-cab39b00-1ac1-11ea-94ca-43bc13ef6c78.png)
-![Android Mobile – 5](https://user-images.githubusercontent.com/40652867/70465728-de5f0180-1ac1-11ea-9afa-f83113bde62e.png)
+![create account](https://user-images.githubusercontent.com/40652867/70823555-76b9f680-1de0-11ea-8d55-ebba3835a5f8.png)
+![Dashboard](https://user-images.githubusercontent.com/40652867/70823584-86d1d600-1de0-11ea-8ccf-a041768e86ae.png)
+![Subject](https://user-images.githubusercontent.com/40652867/70823601-8f2a1100-1de0-11ea-8fae-b58360536c7e.png)
 
