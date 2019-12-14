@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDisplayItem"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/carddisplayImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewDisplayItem"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewDisplayItem"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/cardViewDisplayItem"
+        app:layout_constraintTop_toTopOf="@+id/cardViewDisplayItem"
+        app:srcCompat="@drawable/component_3" />
+
+    <TextView
+        android:id="@+id/displayfilenamecard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="File name here"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewDisplayItem"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewDisplayItem"
+        app:layout_constraintStart_toEndOf="@+id/carddisplayImage"
+        app:layout_constraintTop_toTopOf="@+id/cardViewDisplayItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
