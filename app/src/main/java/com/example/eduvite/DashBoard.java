@@ -2,9 +2,11 @@ package com.example.eduvite;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,6 +39,10 @@ public class DashBoard extends AppCompatActivity {
     RecyclerView recyclerView1;
     RecyclerView recyclerView;
     CategoryAdapter adapter;
+
+//    private ViewPager viewPager;
+    private View user;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,8 +126,24 @@ public class DashBoard extends AppCompatActivity {
         courseList.add(course);
 
 
+
         courseAdapter.notifyDataSetChanged();
         smallCardAdapter.notifyDataSetChanged();
+
+        user = (View) findViewById(R.id.imageView6);
+
+
+
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), UserProfileActivity.class));
+            }
+        });
+
+
+
+
     }
 
     @Override
