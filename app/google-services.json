@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "180491787011-pvp8afbbgr5h21qi7s37hlg677ru0oi7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eduvite",
+            "certificate_hash": "f33c1484c1864e3c260b8782e6534e0243976ac9"
+          }
+        },
+        {
           "client_id": "180491787011-v166efcsfkocdg9q0okoglerjavf8hq2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

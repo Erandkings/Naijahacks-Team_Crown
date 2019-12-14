@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DashBoard" />
+        <activity android:name = ".UserProfileActivity"/>
         <activity android:name=".LoginActivity" />
         <activity android:name=".CreateAccount">
             <intent-filter>
