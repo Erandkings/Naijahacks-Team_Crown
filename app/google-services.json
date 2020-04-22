@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "180491787011",
+    "firebase_url": "https://eduvite-23239.firebaseio.com",
+    "project_id": "eduvite-23239",
+    "storage_bucket": "eduvite-23239.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180491787011:android:394ddc07d6dd92e75b2736",
+        "android_client_info": {
+          "package_name": "com.example.eduvite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180491787011-pvp8afbbgr5h21qi7s37hlg677ru0oi7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eduvite",
+            "certificate_hash": "f33c1484c1864e3c260b8782e6534e0243976ac9"
+          }
+        },
+        {
+          "client_id": "180491787011-v166efcsfkocdg9q0okoglerjavf8hq2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eduvite",
+            "certificate_hash": "67676fadf0559325d47340f116d84e151a6d1fbc"
+          }
+        },
+        {
+          "client_id": "180491787011-fasilotapm8n88oa7r77dn9dfrha2sku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvn73Iz50GSrDbEWlJzmW_iJUWYG4d1eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180491787011-fasilotapm8n88oa7r77dn9dfrha2sku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
