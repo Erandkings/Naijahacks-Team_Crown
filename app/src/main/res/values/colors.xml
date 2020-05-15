@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2D529E</color>
-    <color name="colorPrimaryDark">#2D529E</color>
+    <color name="colorPrimary">#00363d</color>
+    <color name="colorPrimaryDark">#00363d</color>
     <color name="colorAccent">#202447</color>
     <color name="splashColor">#4176E1</color>
     <color name="splash">#181D4B</color>
@@ -14,4 +14,5 @@
     <color name="white">#FFFFFF</color>
     <color name="whiteColor">#FFFFFF</color>
     <!--    <color name="btnColor">#202447</color>-->
+    <color name="color">#003666</color>
 </resources>

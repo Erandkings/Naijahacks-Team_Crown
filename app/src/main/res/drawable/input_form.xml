@@ -5,7 +5,7 @@
 
     <stroke
         android:width="1dp"
-        android:color="@color/button_color" />
+        android:color="#00363d" />
 
     <corners
         android:bottomLeftRadius="100dp"

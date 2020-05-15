@@ -1,0 +1,9 @@
+
+h
+java:S1104"RMake bitmap a static final constant or non-public and provide accessors if needed.(à”£½
+>
+java:S1148L"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+2
+java:S1116A"Remove this empty statement.(ºÁå±
+X
+java:S2259D"BA "NullPointerException" could be thrown; "data" is nullable here.(ÇŸ÷

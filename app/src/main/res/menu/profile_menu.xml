@@ -2,8 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/profile_menu"
-        android:icon="@drawable/add_user_1"
+        android:id="@+id/profile_icon"
+        android:icon="@drawable/user"
+        android:orderInCategory="3"
+        android:title="image"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notifications"
+        android:orderInCategory="2"
+        android:title="image"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search_icon"
+        android:icon="@drawable/search"
         android:orderInCategory="1"
         android:title="image"
         app:showAsAction="always" />
