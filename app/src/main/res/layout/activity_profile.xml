@@ -291,7 +291,7 @@
         <!--            android:layout_width="match_parent"-->
         <!--            android:layout_height="wrap_content"-->
         <!--            app:layout_constraintBottom_toTopOf="@id/logout_button"-->
-        <!--            app:layout_constraintEnd_toEndOf="@id/view1"-->
+        <!--            app:layout_constraintEngitd_toEndOf="@id/view1"-->
         <!--            app:layout_constraintStart_toStartOf="@id/view1">-->
 
         <!--        </LinearLayout>-->
