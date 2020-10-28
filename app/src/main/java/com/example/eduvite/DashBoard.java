@@ -2,13 +2,14 @@ package com.example.eduvite;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.ViewPager;
 
@@ -32,20 +33,10 @@ public class DashBoard extends AppCompatActivity implements NavigationView.OnNav
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        toolbarItems();
+
         Window window = getWindow();
         window.setStatusBarColor(getResources().getColor(R.color.colorPrimary, getTheme()));
-
-//        Toolbar myToolbar = findViewById(R.id.toolbar);
-//        myToolbar.setTitleTextColor(getResources().getColor(R.color.whiteColor, getTheme()));
-//        myToolbar.setVerticalScrollBarEnabled(true);
-//        setSupportActionBar(myToolbar);
-
-//        behavior = behavior + 1;
-
-//        EditText editText = (EditText) findViewById(R.id.search_editText);
-//        String search_string = editText.getText().toString();
-//        editText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, R.drawable.search_ico);
-
 
         viewPager = findViewById(R.id.viewpager);
         adapter = new ViewPagerAdapter(getSupportFragmentManager(), behavior);
@@ -58,7 +49,21 @@ public class DashBoard extends AppCompatActivity implements NavigationView.OnNav
 
 //        customToast();
 
+    }
 
+    public void toolbarItems() {
+        Toolbar myToolbar = findViewById(R.id.toolbar);
+        myToolbar.setVerticalScrollBarEnabled(true);
+        setSupportActionBar(myToolbar);
+
+        ImageView profile_pic = (ImageView) findViewById(R.id.profile_pic);
+        profile_pic.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Profile.class));
+            }
+        });
     }
 
 //    @Override
@@ -92,18 +97,19 @@ public class DashBoard extends AppCompatActivity implements NavigationView.OnNav
         Intent bottomIntent;
         switch (item.getItemId()) {
             case R.id.home_nav:
-                // Here nothing happens because it's the main activity
+                // This function takes you to the dashboard
+                startActivity(new Intent(getBaseContext(), DashBoard.class));
                 break;
-            case R.id.explore_nav:
+            case R.id.explore_nav_icon:
                 // Inflate and activate the search bar
+                startActivity(new Intent(getBaseContext(), ExploreFragment.class));
                 break;
-            case R.id.add_nav:
-                // This action takes you to the add_item activity
+            case R.id.courses_nav_icon:
+                // This action takes you to the saved courses activity
+                startActivity(new Intent(getBaseContext(), SavedCourseFragment.class));
                 break;
-            case R.id.notif_nav:
-                // This action takes you to the notification activity
-                break;
-            case R.id.courses_nav:
+            case R.id.notif_nav_icon:
+                startActivity(new Intent(getBaseContext(), NotificationFragment.class));
                 break;
         }
         return true;

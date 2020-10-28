@@ -47,9 +47,6 @@ public class Profile extends AppCompatActivity {
 //        adapter.add(new ModelClass("String", R.drawable.component_2));
         listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
-        //Configure your toolbar
-//        Toolbar tb = (Toolbar) findViewById(R.id.profile_toolbar);
-//        setSupportActionBar(tb);
     }
 
     public void setImage() {
