@@ -15,10 +15,4 @@
         android:title="image"
         app:showAsAction="always" />
 
-    <item
-        android:id="@+id/search_icon"
-        android:icon="@drawable/search"
-        android:orderInCategory="1"
-        android:title="image"
-        app:showAsAction="always" />
 </menu>

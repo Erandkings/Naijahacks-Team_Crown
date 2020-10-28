@@ -1,8 +1,8 @@
 package com.example.eduvite;
 
 public class ModelClass {
-    private String mCourseName;
-    private String mImage;
+    public String mCourseName;
+    public String mImage;
 
     public ModelClass() {
     }

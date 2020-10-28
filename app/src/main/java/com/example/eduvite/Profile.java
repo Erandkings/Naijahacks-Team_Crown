@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -19,10 +21,12 @@ import com.bumptech.glide.load.resource.bitmap.CircleCrop;
 import java.io.IOException;
 
 public class Profile extends AppCompatActivity {
+    public static final int PICK_IMAGE = 1;
     public Bitmap bitmap;
     ImageView img;
     Uri uri;
-    public static final int PICK_IMAGE = 1;
+    ListView listView;
+    ArrayAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +36,17 @@ public class Profile extends AppCompatActivity {
         Window win = getWindow();
         win.setStatusBarColor(getResources().getColor(R.color.colorPrimary, getTheme()));
 
+        Toolbar myToolbar = findViewById(R.id.profile_toolbar);
+        myToolbar.setTitleTextColor(getResources().getColor(R.color.colorPrimary, getTheme()));
+        myToolbar.setVerticalScrollBarEnabled(true);
+        setSupportActionBar(myToolbar);
+
         setImage();
 
+        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
+//        adapter.add(new ModelClass("String", R.drawable.component_2));
+        listView = (ListView) findViewById(R.id.list_view);
+        listView.setAdapter(adapter);
         //Configure your toolbar
 //        Toolbar tb = (Toolbar) findViewById(R.id.profile_toolbar);
 //        setSupportActionBar(tb);

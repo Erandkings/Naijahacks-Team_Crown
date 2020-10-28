@@ -1,250 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_gravity="bottom">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".DashBoard">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_bar_color"
+        android:elevation="5dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:elevation="1dp"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <View
-            android:id="@+id/view3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/dashboard"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <View
-            android:id="@+id/view2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="180dp"
-            android:background="@drawable/dash_board"
-            app:layout_constraintBottom_toBottomOf="@id/view3"
-            app:layout_constraintEnd_toEndOf="@id/view3"
-            app:layout_constraintStart_toStartOf="@id/view3"
-            app:layout_constraintTop_toTopOf="@id/view3" />
-
-        <EditText
-            android:id="@+id/search_editText"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginEnd="70dp"
-            android:background="@drawable/input_search"
-            android:hint="Search"
-            android:inputType="textPersonName"
-            android:paddingStart="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/view2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-        <TextView
-            android:id="@+id/textView6"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="36dp"
-            android:fontFamily="@font/dmans_regular"
-            android:text="Courses For You"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/view2" />
-
-        <HorizontalScrollView
-            android:id="@+id/view_pager_scroll"
-            android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:fillViewport="false"
-            android:scrollbars="none"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView6">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/viewpager"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/textView8"
-            style="@style/TextAppearance.AppCompat.Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="90dp"
-            android:fontFamily="@font/dmans_regular"
-            android:text="Course by Categories"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_pager_scroll" />
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fillViewport="true"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card1"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="16dp"
-                    android:foreground="@drawable/component_4"
-                    app:cardCornerRadius="10dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="20dp"
-                    android:foreground="@drawable/component_1"
-                    app:cardCornerRadius="10dp"
-                    app:layout_constraintStart_toEndOf="@+id/card1"
-                    app:layout_constraintTop_toTopOf="@+id/card1" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card3"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="20dp"
-                    android:foreground="@drawable/component_2"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="10dp"
-                    app:layout_constraintStart_toEndOf="@+id/card2"
-                    app:layout_constraintTop_toTopOf="@+id/card2">
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card4"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="16dp"
-                    android:foreground="@drawable/component_1"
-                    app:cardBackgroundColor="#ffffff"
-                    app:cardCornerRadius="10dp"
-                    app:layout_constraintStart_toEndOf="@id/card3"
-                    app:layout_constraintTop_toTopOf="@+id/card3" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Biology"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/card1"
-                    app:layout_constraintStart_toStartOf="@+id/card1"
-                    app:layout_constraintTop_toBottomOf="@+id/card1"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Chemistry"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/card2"
-                    app:layout_constraintStart_toStartOf="@+id/card2"
-                    app:layout_constraintTop_toBottomOf="@+id/card1"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Math"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/card3"
-                    app:layout_constraintStart_toStartOf="@+id/card3"
-                    app:layout_constraintTop_toBottomOf="@+id/card1"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Arts"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/card4"
-                    app:layout_constraintStart_toStartOf="@+id/card4"
-                    app:layout_constraintTop_toBottomOf="@+id/card1"
-                    app:layout_constraintVertical_bias="0.0" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </HorizontalScrollView>
-
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab"
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:padding="15dp"
+                android:text="Explore" />
+
+            <ImageView
+                android:id="@+id/img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="@dimen/fab_margin"
-                android:foregroundTint="@color/white"
-                android:foreground="@drawable/floatation" />
+                android:layout_alignParentEnd="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_user" />
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@id/img"
+                android:layout_marginEnd="50dp"
+                app:queryHint="search" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
 
-</androidx.core.widget.NestedScrollView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:elevation="5dp"
+        app:itemBackground="@color/bottomNavigationBackground"
+        app:itemIconSize="15dp"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextAppearanceActive="@style/TextAppearance.AppCompat.Menu"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:labelVisibilityMode="labeled"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:menu="@menu/bottom_bar_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <include layout="@layout/content_dashboard" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

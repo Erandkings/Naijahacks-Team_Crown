@@ -14,15 +14,15 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".Profile"
-            android:parentActivityName=".Profile"/>
-        <activity android:name=".OnBoarding">
+            android:parentActivityName=".Profile" />
+        <activity android:name=".OnBoarding" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SplashScreen" />
         <activity android:name=".DashBoard" />
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".LoginActivity" />
