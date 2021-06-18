@@ -13,7 +13,7 @@ public class ImageUploadInfo {
     public ImageUploadInfo(String name, String url) {
 
         this.imageName = name;
-        this.imageURL= url;
+        this.imageURL = url;
     }
 
     public String getImageName() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list>
 
-<!--    <item android:drawable="@drawable/edit_profile" />-->
-<!--    <item android:drawable="@drawable/add_user_2" />-->
+    <!--    <item android:drawable="@drawable/edit_profile" />-->
+    <!--    <item android:drawable="@drawable/add_user_2" />-->
 
 </layer-list>
